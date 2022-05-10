@@ -1,0 +1,93 @@
+.carouselImage {
+  width: 100%;
+  height: 614px;
+  position: relative;
+}
+@media (min-width: 320px) and (max-width: 599px) {
+  .carouselImage {
+    height: 246px;
+  }
+}
+.image {
+  object-fit: cover;
+  border-radius: 20px;
+}
+.arrow {
+  z-index: 1;
+  opacity: 1;
+  font-size: 45px;
+}
+.carsoulDetails {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  cursor: pointer;
+}
+@media (min-width: 320px) and (max-width: 599px) {
+  .carsoulDetails {
+    height: 246px;
+  }
+}
+/**/
+.galleyImgArrow {
+  position: absolute;
+  z-index: 10;
+  color: white;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  font-size: 45px;
+  cursor: pointer;
+  display: none;
+}
+.galleyImgArrowBefore {
+  position: absolute;
+  z-index: 10;
+  color: white;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  font-size: 45px;
+  cursor: pointer;
+  display: none;
+}
+.galleryImgClose {
+  position: absolute;
+  z-index: 10;
+  color: white;
+  top: 50px;
+  right: 10px;
+  font-size: 45px;
+  cursor: pointer;
+  display: none;
+}
+.imgGalleryCard {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  /* animation: imageGallery;
+  animation-duration: 0.8s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; */
+}
+@keyframes imageGallery {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media (min-width: 599px) {
+  .imgGalleryCard {
+    object-fit: cover;
+    max-height: 95vh;
+    opacity: 1;
+    /* animation: none; */
+  }
+  .galleyImgArrow,
+  .galleyImgArrowBefore,
+  .galleryImgClose {
+    display: block;
+  }
+}

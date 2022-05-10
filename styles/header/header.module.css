@@ -1,0 +1,132 @@
+.globalNav {
+  background-color: white;
+  color: black;
+  border-bottom: 1px solid #8080804a;
+  box-shadow: none !important;
+  animation: HeaderSide;
+  animation-duration: 0.6s;
+  animation-timing-function: linear;
+  box-shadow: 0px 1px 2px 2px #80808024 !important;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 100;
+}
+@keyframes HeaderSide {
+  0% {
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+/*
+.menuFont {
+  margin: 0px 20px;
+  cursor: pointer;
+}
+.popup {
+  position: absolute;
+  left: 0px;
+}
+.link {
+  text-decoration: none;
+}
+.languageSelect {
+  padding: 4px 27px;
+  padding-right: 4px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+.publicIcon {
+  font-size: 21px;
+  position: absolute;
+  top: 3px;
+  left: 5px;
+}
+.leftLang {
+  left: 21px !important;
+}
+.headBack {
+  background-color: transparent !important;
+  color: white !important;
+  box-shadow: none !important;
+} */
+/**********/
+.supportBarArea {
+  padding-top: 10px;
+  font-size: 14px;
+  border-bottom: 1px solid white;
+  padding-bottom: 25px;
+}
+.headerCon {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  color: white;
+  z-index: 2;
+}
+/*Start dynamic pages*/
+
+.dynamicPages {
+  position: absolute;
+  top: 2px;
+  margin: 0px;
+  padding: 0px;
+  width: fit-content;
+  list-style: none;
+  min-width: 140px;
+}
+.dynamicPageItem {
+  padding: 5px 8px;
+  width: 100%;
+}
+.dynamicPageItem:hover {
+  background-color: inherit;
+  cursor: pointer;
+}
+.dynamiUl {
+  position: relative;
+  display: none;
+  width: fit-content;
+}
+.dynamicPagecont:hover .dynamiUl {
+  display: block;
+  transition: 0.3s;
+}
+.dynamicFont {
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+}
+/* .dynamicPageItem:hover .dynamicFont {
+} */
+.subMenu {
+  background-color: white;
+  position: absolute;
+  left: -10px;
+  top: 0px;
+}
+/*End dynamic pages*/
+/*Start Languages*/
+.dynamicPageContNone {
+  height: 0px;
+  overflow: hidden;
+}
+.dynamicPageCont {
+  transition: height 1s ease-out;
+  height: fit-content;
+}
+/*End languages*/
+
+/*conditional classes for header type*/
+
+.fixedHeaderScrollOff {
+  position: sticky;
+  background-color: white;
+  width: 100%;
+  top: 0px;
+  color: black;
+  z-index: 2;
+}

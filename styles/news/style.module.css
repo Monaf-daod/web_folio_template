@@ -1,0 +1,11 @@
+.newsPageCard {
+  /* box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12);
+  border-radius: 20px; */
+  height: 394px;
+  /* background: #ffffff; */
+  padding: 15px 0px;
+}
+.newsPageCard:hover {
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
